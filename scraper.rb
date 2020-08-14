@@ -16,7 +16,7 @@ def scraper
   per_page = job_listings.count
   puts total =
          parsed_page.css(
-           'div.resultsTop > div.secondRow > div > div > div#searchCountPages'
+           'div#searchCountPages'
          ).text.strip.split[
            3
          ]
